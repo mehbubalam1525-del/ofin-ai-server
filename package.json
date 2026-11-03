@@ -1,0 +1,14 @@
+{
+  "name": "ofin-ai-server",
+  "version": "1.0.0",
+  "description": "Ofin AI Telephony Bridge",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "twilio": "^5.0.0",
+    "ws": "^8.16.0"
+  }
+}
