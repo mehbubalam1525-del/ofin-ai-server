@@ -1,14 +1,14 @@
 {
   "name": "ofin-ai-server",
   "version": "1.0.0",
-  "description": "Ofin AI Telephony Bridge",
+  "description": "Ofin AI Telephony Bridge (Vonage)",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js"
   },
   "dependencies": {
+    "@vonage/server-sdk": "^3.16.0",
     "express": "^4.19.2",
-    "twilio": "^5.0.0",
     "ws": "^8.16.0"
   }
 }
