@@ -26,7 +26,7 @@ app.get('/call-me', async (req, res) => {
     const hostUrl = `https://${req.get('host')}`;
 
     const resp = await vonage.voice.createOutboundCall({
-      to: [{ type: 'phone', number: userNumber }],
+      from: { type: 'phone', number: userNumber },
       from: { type: 'phone', number: '12015550123' },
       answer_url: [`${hostUrl}/voice`],
       event_url: [`${hostUrl}/event`]
